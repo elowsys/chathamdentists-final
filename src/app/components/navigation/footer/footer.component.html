@@ -1,0 +1,8 @@
+<footer class="bg-dark border-top footer text-muted py-3 fixed-bottom-lg">
+  <!-- <app-home-footer *ngIf="headerService.ShowCarousel"></app-home-footer> -->
+  <app-contact-us-form *ngIf="ShowContactFooterForm"></app-contact-us-form>
+  <div class="container text-center">
+    &copy; <span>{{CopyrightYear}}</span> - {{Title}} - <a [routerLink]="['/privacy']" href="javascript:;"
+      class="text-link text-light">Privacy</a>
+  </div>
+</footer>

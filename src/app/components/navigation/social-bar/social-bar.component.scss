@@ -1,0 +1,17 @@
+.social-bar {
+  box-shadow: 2px 2px 5px inherit;
+  opacity: 0.9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #343a40 !important;
+}
+
+.social-bar .nav-item {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.social-bar a {
+  text-decoration: none;
+}

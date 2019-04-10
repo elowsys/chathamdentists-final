@@ -1,0 +1,102 @@
+<div class="nav-area">
+  <div class="container text-center top-stack">
+    <div class="logo-container">
+      <a [routerLink]="['/home']" href="#" class="navbar-brand text-info">
+        <img src="../../../assets/images/logo.png" [alt]="title" class="img-fluid">
+      </a>
+    </div>
+  </div>
+
+  <!--Navbar-->
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand>
+      <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="router-link-active" href="#">{{title}}</a>
+    </mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown " dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+            mdbWavesEffect>About Us
+            <span class="caret"></span>
+            <!-- <span class="sr-only">(current)</span> -->
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/about/']" routerLinkActive="router-link-active" class="dropdown-item waves-light"
+              mdbWavesEffect href="#">About Us</a>
+            <a [routerLink]="['/about/commitment']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Our Commitment</a>
+            <div class="divider dropdown-divider"></div>
+            <a [routerLink]="['/about/team']" routerLinkActive="router-link-active" class="dropdown-item waves-light"
+              mdbWavesEffect href="#">The Tream</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown " dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Facilities
+            <span class="caret"></span>
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/facilities/home']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Facilities</a>
+            <a [routerLink]="['/facilities/fees']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Fees</a>
+            <a [routerLink]="['/facilities/finance']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Finance</a>
+            <a [routerLink]="['/facilities/faq']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">FAQ</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown " dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Testimonials
+            <span class="caret"></span>
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/testimonials/home']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Gallery</a>
+            <a [routerLink]="['/testimonials/reviews']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Reviews</a>
+            <a [routerLink]="['/testimonials/video']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Video</a>
+          </div>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Treatments
+            <span class="caret"></span>
+          </a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/treatment/cosmetic']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Cosmetic Dentistry</a>
+            <a [routerLink]="['/treatment/emergency']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Emergency</a>
+            <a [routerLink]="['/treatment/nervous-patients']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Nervous Patients</a>
+            <div class="divider dropdown-divider"></div>
+            <a [routerLink]="['/treatment/dentures']" routerLinkActive="router-link-active"
+              class="dropdown-item waves-light" mdbWavesEffect href="#">Dentures & Missing Tooth</a>
+          </div>
+        </li>
+
+      </ul>
+      <!-- Links -->
+
+      <!-- Search form -->
+      <!-- <form class="form-inline waves-light" mdbWavesEffect>
+        <div class="md-form mt-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        </div>
+      </form> -->
+    </links>
+    <!-- Collapsible content -->
+
+  </mdb-navbar>
+  <!--/.Navbar-->
